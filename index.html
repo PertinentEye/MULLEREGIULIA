@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Descubra Ruby</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #333; /* Cinza escuro */
+            color: #f5f5f5; /* Texto claro */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #444; /* Cinza mais claro */
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222; /* Fundo do conteúdo mais escuro */
+            border: 1px solid #555; /* Borda simples */
+        }
+
+        h2, h3 {
+            color: #e74c3c; /* Vermelho */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            text-align: justify; /* Texto justificado */
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #e74c3c; /* Vermelho */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background-color: #444;
+            padding: 15px;
+            border: 1px solid #666;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            border: none;
+        }
+
+        .video-container p {
+            margin-top: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: #f5f5f5;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubra Ruby</h1>
+    </header>
+
+    <div class="container">
+        <section id="introducao">
+            <h2>O Que É Ruby?</h2>
+            <p>A <strong>linguagem Ruby</strong> é uma linguagem de programação de código aberto que enfatiza a simplicidade e a produtividade. Criada por <strong>Yukihiro Matsumoto</strong> no Japão, Ruby combina uma sintaxe elegante e legível com poderosas características orientadas a objetos, tornando a programação uma experiência mais agradável e eficiente.</p>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características Distintivas</h2>
+            <p>Ruby se destaca por várias características únicas, incluindo:</p>
+            <ul>
+                <li><strong>Orientação a Objetos Total:</strong> Em Ruby, tudo é um objeto, o que promove uma abordagem coesa e flexível para a programação.</li>
+                <li><strong>Alta Flexibilidade:</strong> A linguagem permite aos desenvolvedores modificar e estender seu comportamento, oferecendo uma sintaxe clara e intuitiva.</li>
+                <li><strong>Ruby on Rails:</strong> Este famoso framework acelera o desenvolvimento web ao seguir a filosofia de "convenção sobre configuração".</li>
+                <li><strong>Comunidade Engajada:</strong> Ruby conta com uma comunidade ativa que contribui com uma vasta gama de bibliotecas e ferramentas.</li>
+            </ul>
+        </section>
+
+        <section id="aplicacoes">
+            <h2>Onde Ruby É Usado?</h2>
+            <p>Ruby é amplamente utilizado em diversos contextos:</p>
+            <ul>
+                <li><strong>Desenvolvimento Web:</strong> Ruby on Rails é amplamente utilizado para criar sites e aplicações web.</li>
+                <li><strong>Automação e Scripts:</strong> Ruby é excelente para automatizar tarefas e criar scripts úteis.</li>
+                <li><strong>Aplicações Empresariais:</strong> Muitas empresas utilizam Ruby para desenvolver sistemas internos e ferramentas.</li>
+                <li><strong>Prototipagem Rápida:</strong> A sintaxe simplificada do Ruby facilita a criação de protótipos.</li>
+            </ul>
+        </section>
+
+        <section id="vantagens">
+            <h2>Por Que Usar Ruby?</h2>
+            <p>Ruby oferece diversas vantagens:</p>
+            <ul>
+                <li><strong>Produtividade:</strong> Ruby permite a escrita de código de forma rápida e eficiente.</li>
+                <li><strong>Comunidade e Suporte:</strong> A comunidade ativa e as muitas gems disponíveis oferecem suporte constante.</li>
+                <li><strong>Facilidade de Aprendizado:</strong> A sintaxe intuitiva torna Ruby acessível para iniciantes.</li>
+            </ul>
+        </section>
+
+        <section id="instalacao">
+            <h2>Como Instalar Ruby?</h2>
+            <p>Para instalar a linguagem de programação Ruby de forma didática, você pode seguir este passo a passo, dependendo do seu sistema operacional (Windows, macOS ou Linux).</p>
+
+            <h3>1. Instalando o Ruby no *Windows*</h3>
+            <p>A maneira mais simples de instalar Ruby no Windows é usando o *RubyInstaller*. Veja como:</p>
+            <ul>
+                <li><strong>Passo 1: Baixar o RubyInstaller</strong>
+                    <ul>
+                        <li>Acesse o site oficial: <a href="https://rubyinstaller.org/" target="_blank">RubyInstaller</a></li>
+                        <li>Clique em *Download* e escolha a versão recomendada (geralmente a mais recente).</li>
+                    </ul>
+                </li>
+                <li><strong>Passo 2: Executar o Instalador</strong>
+                    <ul>
+                        <li>Execute o instalador baixado e siga as instruções.</li>
+                        <li>Durante a instalação, marque a opção *"Add Ruby executables to your PATH"*. Isso vai permitir que você use Ruby diretamente pelo terminal.</li>
+                    </ul>
+                </li>
+                <li><strong>Passo 3: Verificar a instalação</strong>
+                    <ul>
+                        <li>Abra o *Prompt de Comando* e digite o seguinte comando para verificar a versão instalada:</li>
+                        <pre><code>ruby -v</code></pre>
+                        <li>Se tudo estiver certo, você verá a versão do Ruby instalada.</li>
+                    </ul>
+                </li>
+                <li><strong>Passo 4: Instalar o bundler (opcional, mas recomendado)</strong>
+                    <ul>
+                        <li>O *Bundler* ajuda a gerenciar dependências de gemas em projetos Ruby.</li>
+                        <li>No terminal, execute:</li>
+                        <pre><code>gem install bundler</code></pre>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2. Instalando o Ruby no *macOS*</h3>
+            <p>No macOS, o Ruby já vem instalado por padrão, mas normalmente não é a versão mais recente. Para instalar a versão mais recente, você pode usar o *Homebrew*.</p>
+            <ul>
+                <li><strong>Passo 1: Instalar o Homebrew (se você ainda não o tiver)</strong>
+                    <ul>
+                        <li>Abra o terminal e execute:</li>
+                        <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 2: Instalar Ruby com Homebrew</strong>
+                    <ul>
+                        <li>No terminal, execute:</li>
+                        <pre><code>brew install ruby</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 3: Verificar a instalação</strong>
+                    <ul>
+                        <li>Após a instalação, adicione Ruby ao PATH do seu sistema. No terminal, execute:</li>
+                        <pre><code>echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc</code></pre>
+                        <li>Verifique se Ruby foi instalado corretamente:</li>
+                        <pre><code>ruby -v</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 4: Instalar o bundler</strong>
+                    <ul>
+                        <li>Para gerenciar as dependências do projeto, instale o Bundler:</li>
+                        <pre><code>gem install bundler</code></pre>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>3. Instalando o Ruby no *Linux* (Ubuntu/Debian)</h3>
+            <p>No Linux, você pode instalar Ruby diretamente pelo *gerenciador de pacotes*.</p>
+            <ul>
+                <li><strong>Passo 1: Atualizar os pacotes do sistema</strong>
+                    <ul>
+                        <li>Abra o terminal e execute:</li>
+                        <pre><code>sudo apt update
+sudo apt upgrade</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 2: Instalar Ruby</strong>
+                    <ul>
+                        <li>Instale Ruby com o seguinte comando:</li>
+                        <pre><code>sudo apt install ruby-full</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 3: Verificar a instalação</strong>
+                    <ul>
+                        <li>Verifique se Ruby foi instalado corretamente executando:</li>
+                        <pre><code>ruby -v</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 4: Instalar o bundler</strong>
+                    <ul>
+                        <li>Instale o Bundler para gerenciar dependências:</li>
+                        <pre><code>gem install bundler</code></pre>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>4. Instalando Ruby Usando o *RVM* (Gerenciador de Versões)</h3>
+            <p>O *RVM* (Ruby Version Manager) é uma ferramenta popular para gerenciar várias versões de Ruby no mesmo sistema. Isso é útil se você deseja testar ou trabalhar com versões diferentes de Ruby.</p>
+            <ul>
+                <li><strong>Passo 1: Instalar dependências (no Linux/macOS)</strong>
+                    <ul>
+                        <li>No terminal, execute:</li>
+                        <pre><code>sudo apt-get install curl gpg</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 2: Instalar o RVM</strong>
+                    <ul>
+                        <li>Execute o comando para instalar o RVM:</li>
+                        <pre><code>\curl -sSL https://get.rvm.io | bash -s stable</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 3: Instalar o Ruby com RVM</strong>
+                    <ul>
+                        <li>Após a instalação do RVM, instale a versão mais recente do Ruby:</li>
+                        <pre><code>rvm install ruby
+rvm use ruby --default</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 4: Verificar a instalação</strong>
+                    <ul>
+                        <li>Confirme a instalação com:</li>
+                        <pre><code>ruby -v</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 5: Instalar o bundler</strong>
+                    <ul>
+                        <li>Para gerenciar gemas, use:</li>
+                        <pre><code>gem install bundler</code></pre>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>5. Testar a Instalação</h3>
+            <p>Após a instalação, é uma boa ideia testar se o Ruby está funcionando corretamente. Crie um pequeno script Ruby.</p>
+            <ul>
+                <li><strong>Passo 1: Criar um arquivo Ruby</strong>
+                    <ul>
+                        <li>Use qualquer editor de texto para criar um arquivo chamado teste.rb:</li>
+                        <pre><code>puts "Olá, Ruby está funcionando!"</code></pre>
+                    </ul>
+                </li>
+                <li><strong>Passo 2: Executar o arquivo</strong>
+                    <ul>
+                        <li>No terminal, execute:</li>
+                        <pre><code>ruby teste.rb</code></pre>
+                        <li>Se tudo estiver funcionando corretamente, você verá a mensagem "Olá, Ruby está funcionando!" no terminal.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="exemplo">
+            <h2>Exemplo Básico de Código</h2>
+            <pre>
+ # Define a classe Tarefa para representar uma tarefa individual
+class Tarefa
+  attr_accessor :descricao, :concluida
+
+  # O construtor da classe recebe uma descrição e define se a tarefa está concluída
+  def initialize(descricao, concluida = false)
+    @descricao = descricao
+    @concluida = concluida
+  end
+
+  # Método para exibir a tarefa de forma amigável
+  def to_s
+    status = @concluida ? "Concluída" : "Pendentes"
+    "#{@descricao} - #{status}"
+  end
+end
+
+# Define a classe GerenciadorDeTarefas para gerenciar um conjunto de tarefas
+class GerenciadorDeTarefas
+  def initialize
+    # Inicia um array vazio para armazenar as tarefas
+    @tarefas = []
+  end
+
+  # Método para adicionar uma nova tarefa
+  def adicionar_tarefa(descricao)
+    tarefa = Tarefa.new(descricao)
+    @tarefas.push(tarefa)
+    puts "Tarefa '#{descricao}' adicionada com sucesso."
+  end
+
+  # Método para marcar uma tarefa como concluída
+  def concluir_tarefa(indice)
+    if indice >= 0 && indice < @tarefas.length
+      @tarefas[indice].concluida = true
+      puts "Tarefa '#{@tarefas[indice].descricao}' marcada como concluída."
+    else
+      puts "Índice inválido. Nenhuma tarefa foi marcada como concluída."
+    end
+  end
+
+  # Método para remover uma tarefa pelo índice
+  def remover_tarefa(indice)
+    if indice >= 0 && indice < @tarefas.length
+      tarefa_removida = @tarefas.delete_at(indice)
+      puts "Tarefa '#{tarefa_removida.descricao}' removida com sucesso."
+    else
+      puts "Índice inválido. Nenhuma tarefa foi removida."
+    end
+  end
+
+  # Método para listar todas as tarefas
+  def listar_tarefas
+    if @tarefas.empty?
+      puts "Nenhuma tarefa para exibir."
+    else
+      puts "Lista de Tarefas:"
+      @tarefas.each_with_index do |tarefa, index|
+        puts "#{index}: #{tarefa}"
+      end
+    end
+  end
+end
+
+# Cria uma instância do gerenciador de tarefas
+gerenciador = GerenciadorDeTarefas.new
+
+# Adiciona algumas tarefas
+gerenciador.adicionar_tarefa("Comprar mantimentos")
+gerenciador.adicionar_tarefa("Ler um livro")
+gerenciador.adicionar_tarefa("Escrever código")
+
+# Lista as tarefas
+gerenciador.listar_tarefas
+
+# Marca a primeira tarefa como concluída
+gerenciador.concluir_tarefa(0)
+
+# Lista as tarefas novamente para ver o status atualizado
+gerenciador.listar_tarefas
+
+# Remove a segunda tarefa
+gerenciador.remover_tarefa(1)
+
+# Lista as tarefas para mostrar a atualização após remoção
+gerenciador.listar_tarefas
+
+            </pre>
+        </section>
+
+        <section id="videos">
+            <h2>Vídeos Sobre Ruby</h2>
+            <div class="video-container">
+                <iframe src="https://youtu.be/0NF7-5hu5kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Vídeo 1</p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://youtu.be/0NF7-5hu5kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Vídeo 2</p>
+            </div>
+           
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Giulia Mira e Matheus Müller</p>
+    </footer>
+</body>
+</html>
